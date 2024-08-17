@@ -1,0 +1,131 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    display: flex;
+
+}
+
+.text{
+    font-size: 15px;
+}
+
+.login_side{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: rgb(255, 255, 255);    
+    float: left;
+    margin-left: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 30px;
+}
+
+.login_side .text_side{
+    display: flex;
+    margin: auto;
+}
+
+.Picture_side{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* min-height: 800px;
+    width: 80%; */
+    padding-right:60%;
+    background-image: url("person_standing.jpg");  
+    float:right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    box-shadow: 30px;
+    
+}
+
+.button{
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: rgb(0, 3, 5);
+    color: aliceblue;
+    border-color: rgb(0, 0, 0);
+    font-size: larger;
+}
+
+.button:hover{
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    border-color: rgb(0, 0, 0);
+    transition: ease-in 100ms;
+}
+
+.text_box{
+    border: 30px black;
+    border-radius: 6px;
+    min-width: 200px;
+    min-height: 30px;
+    box-shadow: 2px 2px 2px black;
+
+}
+.text_box:hover{
+    border-radius: 10px;
+    transition: ease-in 230ms;
+    
+}
+
+.underline{
+    width: 200px;
+    border: 20px;
+    border-color: black;
+}
+
+.Picture_text{
+    color: white;
+    padding-top: 495px;
+    padding-left: 50px;
+    display: flexbox;
+    min-width: 400px;
+}
+
+@media (max-width: 294px ) {
+    .login_side{
+        font-size: smaller;
+    }
+
+    .container{
+        font-size: smaller;
+    }
+
+    .Picture_side{
+        padding-right: 40%;
+    }
+
+    .text{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 209px ) {
+    .login_side{
+        font-size: smaller;
+    }
+
+    .container{
+        font-size: smaller;
+    }
+
+    .Picture_side{
+        padding-right: 20%;
+
+    }
+}
+
+
+/* for the picture to reduce */
+@media (max-width: 351px ) {
+    .Picture_side{
+        padding: 30%;
+    }
+}
