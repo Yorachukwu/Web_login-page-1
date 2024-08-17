@@ -125,6 +125,10 @@ body{
 
 /* for the picture to reduce */
 @media (max-width: 351px ) {
+    .container{
+        display: block;
+    }
+
     .Picture_side{
         padding: 30%;
     }
