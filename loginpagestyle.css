@@ -31,7 +31,7 @@ body{
     /* min-height: 800px;
     width: 80%; */
     padding-right:60%;
-    background-image: url("person_standing.webp");  
+    background-image: url("another_person.webp");  
     float:right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,6 +104,7 @@ body{
 
     .text{
         font-size: 13px;
+        text-shadow: 20px 20px black;
     }
 }
 
@@ -120,16 +121,18 @@ body{
         padding-right: 20%;
 
     }
+    
 }
 
 
 /* for the picture to reduce */
 @media (max-width: 351px ) {
     .container{
-        display: block;
+        display: contents;
     }
 
     .Picture_side{
         padding: 30%;
+        box-shadow: 100px 100px black;
     }
 }
