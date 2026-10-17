@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoTap</string>
+    <string name="service_label">AutoTap automation</string>
+    <string name="service_description">Lets AutoTap open apps and tap buttons on your behalf to run the automations you set up. It only acts when you start a task.</string>
+</resources>

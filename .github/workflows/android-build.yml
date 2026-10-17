@@ -1,0 +1,31 @@
+name: Build AutoTap APK
+
+on:
+  push:
+    paths:
+      - "android-automation/**"
+      - ".github/workflows/android-build.yml"
+  pull_request:
+    paths:
+      - "android-automation/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: android-automation
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Build debug APK
+        run: ./gradlew assembleDebug --stacktrace
+      - uses: actions/upload-artifact@v4
+        with:
+          name: autotap-debug-apk
+          path: android-automation/app/build/outputs/apk/debug/app-debug.apk
